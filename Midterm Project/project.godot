@@ -19,9 +19,32 @@ config/name="Midterm Project"
 run/main_scene="res://Node2D.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/fps/force_fps=59
+settings/stdout/print_fps=true
+
 [display]
 
-window/dpi/allow_hidpi=true
+window/vsync/use_vsync=false
+
+[input]
+
+draw={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+start={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[physics]
+
+2d/physics_engine="GodotPhysics"
+2d/default_linear_damp=0.0
 
 [rendering]
 
