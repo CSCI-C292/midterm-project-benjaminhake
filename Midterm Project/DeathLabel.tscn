@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="DeathLabel" type="Label"]
+visible = false
+margin_left = 340.384
+margin_top = 208.235
+margin_right = 457.384
+margin_bottom = 239.235
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0.447059, 0.164706, 0.109804, 1 )
+text = "Dead!
+Press R to Restart!"
+__meta__ = {
+"_edit_use_anchors_": false
+}

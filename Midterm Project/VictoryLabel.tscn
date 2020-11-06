@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Button.gd" type="Script" id=1]
+
+[node name="VictoryLabel" type="Label"]
+visible = false
+margin_left = 390.309
+margin_top = 123.61
+margin_right = 448.309
+margin_bottom = 154.61
+rect_scale = Vector2( 4, 4 )
+custom_colors/font_color = Color( 0.917647, 0.027451, 0.027451, 1 )
+text = "VICTORY!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = -8.24072
+margin_top = 17.2306
+margin_right = 66.7593
+margin_bottom = 37.2306
+text = "Continue?"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="Button" to="Button" method="_on_Button_button_down"]

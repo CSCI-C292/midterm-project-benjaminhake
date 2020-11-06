@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Level4.gd" type="Script" id=1]
+[ext_resource path="res://DeathLabel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RiderRigidBody2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Flag.tscn" type="PackedScene" id=6]
+[ext_resource path="res://VictoryLabel.tscn" type="PackedScene" id=7]
+[ext_resource path="res://LinesLabel.tscn" type="PackedScene" id=8]
+[ext_resource path="res://sawblade.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/background.JPG" type="Texture" id=10]
+
+[node name="Level4" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 525.046, 302.304 )
+rotation = 1.5708
+scale = Vector2( 1.36782, 1.77001 )
+texture = ExtResource( 10 )
+
+[node name="Flag" parent="." instance=ExtResource( 6 )]
+position = Vector2( 891.754, 296.283 )
+
+[node name="RiderRigidBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 126.444, 165.421 )
+
+[node name="VictoryLabel" parent="." instance=ExtResource( 7 )]
+margin_left = 263.848
+margin_top = -465.891
+margin_right = 321.848
+margin_bottom = -434.891
+
+[node name="DeathLabel" parent="." instance=ExtResource( 4 )]
+margin_left = 255.839
+margin_top = -453.877
+margin_right = 372.839
+margin_bottom = -422.877
+
+[node name="LinesLabel" parent="." instance=ExtResource( 8 )]
+margin_left = 8.88467
+margin_top = 13.3498
+margin_right = 110.885
+margin_bottom = 27.3498
+
+[node name="sawblade" parent="." instance=ExtResource( 9 )]
+position = Vector2( 293.412, 470.936 )
+
+[node name="sawblade2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 486.963, 149.24 )
+
+[node name="sawblade3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 680.515, 460.258 )
